@@ -2,11 +2,11 @@
   --ink: #24282b;
   --muted: #6b7174;
   --line: #e7ecef;
-  --blue: #38a1db;
-  --cyan: #56c3cc;
-  --pale: #f5f8f9;
-  --pink: #ff9ca0;
-  --yellow: #f9c148;
+  --blue: #f08a24;
+  --cyan: #ff9f43;
+  --pale: #fff8f0;
+  --pink: #ffb36b;
+  --yellow: #ffd166;
   --green: #57d58e;
   --body-font: "Koburina Gothic W3 JIS2004", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --mincho: "A1 Mincho", "Shippori Mincho", "Yu Mincho", YuMincho, serif;
@@ -87,7 +87,7 @@ button {
 }
 
 .site-header.is-scrolled {
-  box-shadow: 10px 0 40px rgba(40, 70, 80, .08);
+  box-shadow: 10px 0 40px rgba(126, 73, 20, .10);
 }
 
 .brand {
@@ -127,28 +127,28 @@ button {
 }
 
 .global-nav {
-  width: calc(100% - 22px);
+  width: calc(100% - 24px);
   min-height: 0;
-  margin-top: 24px;
+  margin-top: 22px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   grid-auto-rows: max-content;
   align-content: center;
   justify-items: center;
   flex: 1;
-  gap: clamp(9px, 1.5vh, 18px) 6px;
+  gap: clamp(5px, .95vh, 10px);
 }
 
 .global-nav a {
   width: auto;
-  min-width: 28px;
-  min-height: 88px;
-  padding: 8px 3px;
+  min-width: 30px;
+  min-height: auto;
+  padding: 3px 2px;
   color: #444;
-  font-size: clamp(10px, 1.35vh, 12px);
-  line-height: 1.1;
+  font-size: clamp(9px, 1.18vh, 11px);
+  line-height: 1.04;
   text-align: center;
-  letter-spacing: .08em;
+  letter-spacing: .04em;
   writing-mode: vertical-rl;
   text-orientation: upright;
   transition: color .25s ease;
@@ -163,12 +163,11 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  grid-column: 1 / -1;
   gap: 4px;
-  width: 72px !important;
-  min-height: 76px;
+  width: 64px !important;
+  min-height: 72px;
   margin-top: clamp(2px, .8vh, 8px);
-  padding: 10px 6px !important;
+  padding: 9px 5px !important;
   color: #fff !important;
   background: var(--ink);
   border-radius: 999px;
@@ -177,8 +176,8 @@ button {
 }
 
 .entry-link span {
-  font: 500 13px/1 var(--button);
-  letter-spacing: .08em;
+  font: 500 12px/1 var(--button);
+  letter-spacing: .06em;
 }
 
 .entry-link small {
@@ -267,7 +266,7 @@ button {
   content: "";
   width: 1px;
   height: 72px;
-  background: linear-gradient(var(--cyan) 0 50%, rgba(86,195,204,.2) 50%);
+  background: linear-gradient(var(--cyan) 0 50%, rgba(255,159,67,.22) 50%);
   background-size: 100% 200%;
   animation: scrollLine 1.8s ease-in-out infinite;
 }
@@ -332,7 +331,7 @@ button {
 .button:hover {
   color: #fff;
   border-color: var(--cyan);
-  background: linear-gradient(25deg, var(--cyan), #7be3e4);
+  background: linear-gradient(25deg, var(--cyan), #ffc266);
 }
 
 .interview {
@@ -407,7 +406,7 @@ button {
 }
 
 .person-card:nth-child(3)::before {
-  background: linear-gradient(135deg, #94d8f1, #7be3e4);
+  background: linear-gradient(135deg, #ffd6a0, #ffc266);
   transform: translateX(-50%) skew(-8deg) rotate(9deg);
 }
 
@@ -483,7 +482,7 @@ button {
   grid-template-columns: 190px 1fr;
   gap: 24px;
   padding: 28px 0;
-  border-bottom: 1px solid #dfe8ec;
+  border-bottom: 1px solid #f2dcc3;
 }
 
 .feature-list b {
@@ -536,7 +535,7 @@ button {
   min-height: 560px;
   margin-right: -4vw;
   background: #fff;
-  box-shadow: 0 22px 60px rgba(45, 80, 90, .08);
+  box-shadow: 0 22px 60px rgba(126, 73, 20, .10);
 }
 
 .job-list {
@@ -572,8 +571,8 @@ button {
 }
 
 .job-list a:hover {
-  color: #119fb0;
-  background: #fbfdfe;
+  color: #e87416;
+  background: #fffaf4;
 }
 
 .job-image {
@@ -610,7 +609,7 @@ button {
 }
 
 .requirements-table dt {
-  background: #f3f7f8;
+  background: #fff3e3;
   font-weight: 700;
 }
 
@@ -626,7 +625,7 @@ button {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  background: linear-gradient(25deg, var(--cyan), #7be3e4);
+  background: linear-gradient(25deg, var(--cyan), #ffc266);
 }
 
 .movie-box img {
@@ -675,7 +674,7 @@ button {
 .cta-visit {
   padding: 72px 8vw;
   text-align: center;
-  background: #f5f8f9;
+  background: #fff8f0;
 }
 
 .cta-visit a {
@@ -716,7 +715,7 @@ button {
   min-height: 330px;
   color: #fff;
   text-align: center;
-  background: linear-gradient(25deg, #f56f61, #ff9ca0 54%, #f9c148);
+  background: linear-gradient(25deg, #f0782d, #ff9b45 54%, #ffd166);
 }
 
 .cta-entry strong {
@@ -907,18 +906,22 @@ button {
   }
 
   .global-nav {
-    margin-top: 18px;
-    gap: 5px 4px;
+    margin-top: 14px;
+    gap: 3px;
   }
 
   .global-nav a {
-    min-height: 74px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    min-width: 26px;
+    min-height: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 9px;
+    line-height: 1;
   }
 
   .entry-link {
-    min-height: 64px;
+    width: 58px !important;
+    min-height: 58px;
   }
 }
 
@@ -970,7 +973,7 @@ button {
     gap: 0;
     padding: 22px 5vw 28px;
     background: rgba(255,255,255,.97);
-    box-shadow: 0 24px 40px rgba(30, 60, 70, .08);
+    box-shadow: 0 24px 40px rgba(126, 73, 20, .10);
     transform: translateY(-130%);
     transition: transform .3s ease;
   }
