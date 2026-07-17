@@ -228,7 +228,7 @@ button {
 
 .hero h2 {
   display: inline-block;
-  margin: 0;
+  margin: 12px 0 0;
   color: #1f2427;
   font: italic 400 clamp(36px, 5vw, 74px)/1.25 var(--mincho);
   letter-spacing: .18em;
