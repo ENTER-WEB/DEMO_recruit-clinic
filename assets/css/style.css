@@ -1,13 +1,13 @@
 :root {
   --ink: #24282b;
   --muted: #6b7174;
-  --line: #e7ecef;
+  --line: #f0dfcb;
   --blue: #f08a24;
   --cyan: #ff9f43;
   --pale: #fff8f0;
   --pink: #ffb36b;
   --yellow: #ffd166;
-  --green: #57d58e;
+  --green: #d98f2b;
   --body-font: "Koburina Gothic W3 JIS2004", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --mincho: "A1 Mincho", "Shippori Mincho", "Yu Mincho", YuMincho, serif;
   --roman: "reason-new", "Futura", "Trebuchet MS", sans-serif;
@@ -397,7 +397,7 @@ button {
   width: 82%;
   aspect-ratio: 1.55;
   transform: translateX(-50%) skew(-14deg) rotate(-8deg);
-  background: linear-gradient(135deg, var(--pink), #ffd7ea);
+  background: linear-gradient(135deg, var(--pink), #ffe2bf);
 }
 
 .person-card:nth-child(2)::before {
@@ -577,7 +577,7 @@ button {
 
 .job-image {
   background:
-    linear-gradient(25deg, rgba(148,216,241,.32), rgba(249,193,72,.18)),
+    linear-gradient(25deg, rgba(255,159,67,.34), rgba(255,209,102,.22)),
     url("../images/workstyle-clinic.png") center/cover;
 }
 
