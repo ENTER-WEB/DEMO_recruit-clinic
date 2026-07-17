@@ -214,7 +214,7 @@ button {
 .hero-copy {
   position: absolute;
   z-index: 3;
-  top: 20%;
+  top: 25%;
   left: 7vw;
 }
 
@@ -1061,7 +1061,7 @@ button {
   }
 
   .hero-copy {
-    top: 22%;
+    top: 27%;
     left: 6vw;
   }
 
@@ -1095,7 +1095,7 @@ button {
 
   .hero-copy {
     top: auto;
-    bottom: 150px;
+    bottom: 112px;
     left: 5vw;
   }
 
