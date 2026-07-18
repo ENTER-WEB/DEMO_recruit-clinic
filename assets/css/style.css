@@ -170,30 +170,37 @@ button {
 }
 
 .entry-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  display: grid;
+  place-items: center;
   justify-self: center;
-  gap: 4px;
-  width: 68px !important;
-  min-height: 76px;
+  width: 66px !important;
+  min-height: 88px;
   margin-top: clamp(6px, 1.2vh, 14px);
-  padding: 9px 5px !important;
+  padding: 14px 6px !important;
   color: #fff !important;
-  background: var(--ink);
+  background: linear-gradient(180deg, var(--cyan), var(--blue));
   border-radius: 999px;
+  box-shadow: 0 12px 26px rgba(240, 138, 36, .28);
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+.entry-link:hover {
+  color: #fff !important;
+  filter: saturate(1.06);
+  box-shadow: 0 15px 30px rgba(240, 138, 36, .34);
 }
 
 .entry-link span {
-  font: 500 12px/1 var(--button);
-  letter-spacing: .06em;
+  display: block;
+  font: 600 12px/1 var(--button);
+  letter-spacing: .08em;
 }
 
 .entry-link small {
+  display: none;
   font-size: 9px;
   line-height: 1;
   letter-spacing: .04em;
@@ -935,7 +942,8 @@ button {
 
   .entry-link {
     width: 58px !important;
-    min-height: 58px;
+    min-height: 66px;
+    padding: 10px 5px !important;
   }
 }
 
@@ -1013,12 +1021,11 @@ button {
   }
 
   .entry-link {
-    justify-content: center;
-    flex-direction: row;
     grid-column: auto;
     width: 100% !important;
     min-height: auto;
     margin-top: 16px;
+    padding: 16px 0 !important;
     border-bottom: 0 !important;
     transform: none;
   }
